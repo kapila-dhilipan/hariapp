@@ -1,0 +1,723 @@
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hari prasath(Software Developer)" />
+  <meta name="Description" content="This is an ERP platform suitable for every Enterprises that needs highly organized working and also it has major emphasis on Agriculture too">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+      
+  
+  <!-- CSS sheet for local designing -->
+  <link href="{% static 'css/portfolio-style.css' %}" rel="stylesheet">
+  <link rel="shortcut icon" href="{% static 'img/Generp.png' %}" type="image/x-icon">
+  <title>GenERP - Portfolio(HARI) </title>
+</head>
+
+<body>
+    <!-- Navbar Design -->
+    <nav class="navbar fixed-top navbar-expand-md">
+      <a class="navbar-brand m-0 me-auto" href="#">HARI <span>PRASATH</span></a>
+      
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="bi bi-justify"></i></span>
+      </button>
+      <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top" href="#timeline">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 from-top me-2" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="darkMode-icon" class="bi bi-moon"></div>
+      <div class="sidebar"></div>
+    </nav>
+  
+    <!-- Home Section Designing -->
+    <section class="home d-flex align-items-center justify-content-center position-relative" id="home">
+      <div class="row align-items-center">
+        <div class="home-content col-md-5 col-sm-12 text-center text-md-start" data-aos="fade-up">
+          <h3 data-aos="fade-up">Hello, I am</h3>
+          <h1 data-aos="fade-up">Hari prasath</h1>
+          <p data-aos="fade-up">An innovative software engineer with a overall two year's of experience as a python developer and involved in various stages of the software developement cycle and concretely involved in machine learning models designing and deployment using AWS cloud services.</p>            
+          <div class="icon-display d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
+            <a href="https://github.com/silverking-hari?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/hari-prasath-957158b1/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://hub.docker.com/r/hariprasath/posts" target="_blank"><i class="bi bi-dropbox"></i></a>
+            <a href="#contactme" target="_blank"><i class="bi bi-envelope-at-fill"></i></a>
+          </div>
+          <a href="{% url "dashboard" %}" class="btn" data-aos="fade-up">project Demo</a><br>
+          <small class="fw-bold text-muted ms-2" style="font-size: 10px;">Click above for the Sample project for Sale....</small>
+        </div>
+        <!-- <div class="col-6 col-md-7"></div> -->
+      </div>
+      <div class="col-md-7 col-sm-d-none position-absolute top-0 end-0 h-100 overflow-hidden">
+        <div class="profession-container position-absolute">
+          <div class="profession-box" data-aos="fade-left">
+            <div class="profession" style="--i:0;">
+              <i class='bx bxl-python me-5'></i><h3>Python Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+              <i class='bx bxl-amazon'></i><h3>AWS Cloud Engg.</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+              <i class='bx bxs-chalkboard'></i><h3>Free Lancer</h3>
+            </div>
+            <div class="profession" style="--i:3;">
+              <i class='bx bxs-layer-plus'></i><h3>Team Player</h3>
+            </div>
+
+            <div class="circle"></div>
+          </div>    
+      </div>
+      <div class="overlay"></div>       
+      
+      <div class="home-img">
+        <img src="{% static 'img/portfolio/person1.png' %}" alt="" data-aos="fade-left">
+      </div>
+    </section>
+    
+    <!-- About Section Design -->
+    <section id="about" class="about">
+      <div class="container-fluid mb-4">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-img col-md-6 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="150">
+            <img src="{% static 'img/portfolio/about.png' %}"  class="img-fluid">
+          </div>
+          <div class="col-md-6 d-flex align-items-start py-3">
+            <div class="about-content text-center text-md-start" data-aos="fade-left">
+              <h2 id="section-title">About <span>Me</span></h2>
+              <h3>Hi, I'm Here To Help Your Next Project</h3>
+              <p>"An innovative, hardworking, and diligent software developer hailing from the vibrant city of <strong>Vellore</strong>. I am on the lookout for opportunities in a challenging and dynamic environment in software development.  My journey of <strong>learning and mastering these skills has been entirely self-driven,</strong> reflecting my commitment to continuous growth and innovation."</p>
+              <!-- <h1 id="section-title" class="fs-5 text-center pt-3">Educa<span>tion</span></h1> -->
+              <div id="education-container" class="education-layout col-12 d-flex align-items-center justify-content-start py-2 mb-3" data-aos="fade-up">
+                <div class="education-box col-6 p-3">
+                  <h3 class="fs-6 fw-normal d-flex justify-content-between">2013 - 2017 <span style="color: #ffffff;">cgpa: 8.2</span></h3>
+                  <h1 class="fs-4 m-0">Bachelor's Degree in Mechanical</h1>
+                  <strong>Arunai Engineering College, Thiruvannamalai</strong>
+                  <p class="m-0">"I started as a mechanical engineer, but my passion for software development led me to become a Python full stack developer."</p>
+                </div>
+              
+                <div class="education-box col-6 p-3 py-2 second-show">
+                  <h3 class="fs-6 fw-normal d-flex justify-content-between">2011 - 2013 <span style="color: #000000;">score: 87%</span></h3>
+                  <h1 class="fs-4 m-0">Higher Secondary Education</h1>
+                  <strong>St. Mark's Higher Secondary, Vellore</strong>
+                  <p class="m-0">"Started School in a hometown and accomplished a lot of things along the way and always never failed to try new things"</p>
+                </div>
+              </div>
+              
+            <div>
+              <a href="#timeline" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline Designing Section  -->
+    <section id="timeline" class="px-3">
+      <h2 id="section-title" class="text-center my-4" data-aos="fade-down">Time <span>line!</span></h2>
+      <div class="container-fluid rounded mb-3" style="background-color:#c0c0c069;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline py-3">
+                    <div class="timeline" data-aos="fade-left">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-year">2022 - 2024</div>
+                            <h3 class="title">Python & AWS developer</h3>
+                            <h6 class="fs-6 fw-bolder text-decoration-underline">Sight Spectrum Technologies pvt. Ltd</h6>
+                            <p class="description">
+                              As a Python Devloper, I have actively involved in devlopment of ERP platform using Django and AWS cloud related services for the effective working of the software and also involved in Generative AI POC development for a superbotics client.
+                            </p>
+                            <div class="timeline-icon"><i class='bx bxs-rocket'></i></div>
+                        </div>
+                    </div>
+                    <div class="timeline" data-aos="fade-right">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-year">2021 - 2022</div>
+                            <h3 class="title">Python Developer</h3>
+                            <h6 class="fs-6 fw-bolder text-decoration-underline">Suriya Informatics pvt. Ltd</h6>
+                            <p class="description">
+                                Worked as a Software trainee and involved various phase of software development training in <strong>Python,Pandas,Django,Rest API </strong>under the guidence of a well trained mentor 
+                            </p>
+                            <div class="timeline-icon"><i class='bx bxs-collection'></i></div>
+                        </div>
+                    </div>
+                    <div class="timeline" data-aos="fade-left">
+                      <div href="#" class="timeline-content">
+                          <div class="timeline-year">2018 - 2020</div>
+                          <h3 class="title">Mechanical Engineer</h3>
+                          <h6 class="fs-6 fw-bolder text-decoration-underline">Gesco Productions Pvt. Ltd</h6>
+                          <p class="description">
+                            As a young Graduate, I have started my carreer as a Mechanical Engineer and started working as production staff and maintained a daily production and achieved the daily output based on the business requirements.
+                          </p>
+                          <div class="timeline-icon"><i class='bx bxs-chevron-down-square'></i></div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 px-1">
+            <div class="timeline-inner flex-column p-2 w-100 shadow bg-white timeline-border mb-2">
+              <h3 class="text-center">Web Technologies</h3>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-right" data-aos-delay="100">
+                <i class='bx bxl-html5 p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">Html & Css<span>90<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-right" data-aos-delay="300">
+                <i class='bx bxl-react p-1 m-1' ></i> 
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">ReactJS<span>70<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-right" data-aos-delay="500">
+                <i class='bx bxl-javascript p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">Javascript<span>80<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-right" data-aos-delay="700">
+                <i class='bx bxl-bootstrap p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">Bootstrap<span>70<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-6 col-lg-4 px-1">
+            <div class="timeline-inner flex-column p-2 w-100 shadow bg-white timeline-border mb-2">
+              <h3 class="text-center">Software Skills</h3>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-up" data-aos-delay="100">
+                <i class='bx bxl-python p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">Python<span>90<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #87CEFA" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-up" data-aos-delay="300">
+                <i class='bx bxl-django p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">Django Framework<span>70<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #87CEFA" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-up" data-aos-delay="500">
+                <i class='bx bxl-flask p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">Flask<span>70<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color:#87CEFA" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-up" data-aos-delay="700">
+                <i class='bx bxl-aws p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">AWS Cloud Services<span>60<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #87CEFA" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 col-lg-4 px-1">
+            <div class="timeline-inner flex-column p-2 w-100 shadow bg-white timeline-border mb-2">
+              <h3 class="text-center">Backend Tools</h3>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-left" data-aos-delay="100">
+                <i class='bx bxl-postgresql p-1 m-1'></i>
+                <div class="timeline-align w-100" >
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">Postgresql<span>80<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-left" data-aos-delay="300">
+                <i class='bx bxl-mongodb p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">MongoDB<span>60<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-left" data-aos-delay="500">
+                <i class='bx bx-vector p-1 m-1'></i>
+                <div class="timeline-align w-100 ">
+                  <h4 class="fs-5 d-flex justify-content-between mt-2 mb-0 position-relative">Vector Database<span>60<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item px-3 w-100 d-flex align-items-start gap-2 mb-3 pb-2 shadow" data-aos="fade-left" data-aos-delay="700">
+                <i class='bx bx-network-chart p-1 m-1'></i>
+                <div class="timeline-align w-100 text-wrap">
+                  <h4 class="fs-4 d-flex justify-content-between mt-2 mb-0 position-relative">LLM & Gen. AI<span>60<div class="percent">%</div></span></h4>
+                  <div class="progress rounded-pill" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #5D76A9" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Timeline Section -->
+    
+    <!-------                Project Section Begins             ---------->
+    <section class="project" id="projects">
+      <h2 id="section-title" class="text-center mt-4" data-aos="fade-down">Projects <span>Done!</span></h2>
+      <h6 class="text-center lead mb-5">list of all the projects that have defined my carreer...</h6>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card text-light card-has-bg">
+              <div class="card-img-overlay d-flex flex-column" style="background-image: url({% static "img/portfolio/Chatbot_images.jpg" %});">
+                <div class="card-body">
+                    <small class="card-meta mb-2">conversational model</small>
+                    <h4 class="card-title mt-0">"Revolutionizing Conversational AI: The Journey of LLM Development"</h4>
+                  
+                </div>  
+                <div class="card-footer">
+                  <div class="media-body ">
+                    <h4 class="my-0 fw-bold d-block p-2" style="color: #754fe9;">AI Chatbot</h4>
+                  </div>
+                </div>  
+              </div>
+            </div>           
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card text-light card-has-bg">
+                <div class="card-img-overlay d-flex flex-column" style="background-image: linear-gradient(to bottom, #505051be, rgba(255, 255, 255, 0.571)), url({% static "img/portfolio/project1.jpg" %}); background-size: cover;">
+                    <div class="card-body">
+                        <small class="card-meta mb-2">E-mail Integrations</small>
+                        <h4 class="card-title mt-0">"Efficiency Unleashed: Streamlining Workflows with Email Automation"</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="media-body">
+                            <h4 class="my-0 fw-bold d-block p-2" style="color: #754fe9;">Email Automation</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card text-light card-has-bg">
+              <div class="card-img-overlay d-flex flex-column" style="background-image: url({% static "img/portfolio/hr-img.jpg" %});">
+                <div class="card-body">
+                    <small class="card-meta mb-2">Enterprises Resource Planning</small>
+                    <h4 class="card-title mt-0">"Cultivating Prosperity: Harnessing Innovation in Agriculture"</h4>
+                </div>  
+                <div class="card-footer">
+                  <div class="media-body ">
+                    <h4 class="my-0 fw-bold p-2 d-block" style="color: #754fe9;">Agriculture module</h4>
+                  </div>
+                </div>  
+              </div>
+            </div>           
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card text-light card-has-bg">
+              <div class="card-img-overlay d-flex flex-column" style="background-image: url({% static "img/portfolio/crm-img.png" %});">
+                <div class="card-body">
+                    <small class="card-meta mb-2">Enterprises Resource Planning</small>
+                    <h4 class="card-title mt-0">"Customer-Centric Success: Navigating Relationships with Our CRM Solution"
+                    </h4>
+                </div>  
+                <div class="card-footer">
+                  <div class="media-body ">
+                    <h4 class="my-0 fw-bold p-2 d-block" style="color: #754fe9;">CRM Module</h4>
+                  </div>
+                </div>  
+              </div>
+            </div>           
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card text-light card-has-bg">
+              <div class="card-img-overlay d-flex flex-column" style="background-image: url({% static "img/portfolio/agri-img.jpg" %});">
+                <div class="card-body">
+                    <small class="card-meta mb-2">Enterprises Resource Planning</small>
+                    <h4 class="card-title mt-0">"HR Harmony: Empowering Organizations with an Integrated ERP HR Module"</h4>
+                </div>  
+                <div class="card-footer">
+                  <div class="media-body ">
+                    <h4 class="my-0 fw-bold p-2 d-block" style="color: #754fe9;">HR module</h4>
+                  </div>
+                </div>  
+              </div>
+            </div>           
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card text-light card-has-bg">
+              <div class="card-img-overlay d-flex flex-column" style="background-image: url({% static "img/portfolio/Edu blue.jpg" %});">
+                <div class="card-body">
+                    <small class="card-meta mb-2">Enterprises Resource Planning</small>
+                    <h4 class="card-title mt-0">"Analytics for data manupulation's"</h4>
+                  
+                </div>  
+                <div class="card-footer">
+                  <div class="media-body ">
+                    <h4 class="my-0 fw-bold p-2 d-block" style="color: #754fe9;">Analysis module</h4>
+                    
+                  </div>
+                </div>  
+              </div>
+            </div>           
+          </div>  
+        </div>
+      </div>           
+    </section>
+    <!------- Project section Ends   ---------->
+    
+    <!------- Testimonial Section Design begins  --------->
+    <section class="testimonial px-0 pb-2 slider-section" id="testimonials">
+      <div class="container-fluid slider-column">
+        <h2 id="section-title" class="text-center mt-2 " data-aos="fade-down">Clients <span>Thought!</span></h2>
+        <div class="row">
+          <div class="swiper swiperCarousel mt-2" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                    <div class="testimonial-card text-wrap">
+                        <img class="avatar" src="https://media.licdn.com/dms/image/C4E03AQGt2RNdyWv91g/profile-displayphoto-shrink_400_400/0/1618912329083?e=1707350400&v=beta&t=fpaT6Mv3NGipiUNQBvU_y2UlUJRCT5E7W8joHSKmtmw"  alt="image"/>
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Sudharshan</h1>
+                            <h2 class="title">Managing Directer, Superbotics Solutions</h2>
+                            
+                        </div>
+                        
+                        <div class="quote-container">
+                            <p class="quote">
+                                I must admit, as a software developer, The implementation of advanced language models has significantly enhanced the bot's conversational capabilities and user experience. The project's success is a testament to meticulous planning and dedicated effort in pushing the boundaries of natural language processing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img class="avatar" src="https://media.licdn.com/dms/image/C5103AQHzw5XPgFnMRg/profile-displayphoto-shrink_400_400/0/1516535834672?e=1707350400&v=beta&t=Ttyv8eaPKyKTAmsPSPXRJHMeW-D7OT02oAoed_sVXf0" alt="image"/>
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Vishnu Muthu</h1>
+                            <h2 class="title">Project Co-ordinator,Suriya Informatics</h2>
+                        </div>
+                        <div class="quote-container">
+                            <p class="quote">
+                              Their positive acknowledgment recognizes the significance of creating an advanced and intuitive conversational model, emphasizing the success of my efforts in the field of artificial intelligence and natural language processing. The individual's praise adds further validation to the project's excellence and underscores the impact of my commitment to delivering high-quality outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img class="avatar" src="https://media.licdn.com/dms/image/C4E03AQF5XxhBIoUw9g/profile-displayphoto-shrink_400_400/0/1626683048189?e=1707350400&v=beta&t=oj7p9Hwpintxg_yL1J8J_ma_IYJaeol1EM2_Wbu4tCQ" />
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Damien Torres</h1>
+                            <h2 class="title">Head of Business decisions,Client of Superbotics(France,paris)</h2>
+                        </div>
+                        <div class="quote-container">
+                            <p class="quote">
+                                The day I started using the MindSync Neural Interface, I understood it wasn't just an ordinary gadget, but an extraordinary leap in technological innovation. Its user-friendly nature, mixed with the uncanny ability to understand and process my thoughts, is genuinely awe-inspiring. It's as if it took the immense complexity of the human brain and made it accessible, all without compromising my privacy or security.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img class="avatar" src="https://i.pravatar.cc/200?img=59" />
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Ferdinand Moore</h1>
+                            <h2 class="title">
+                                Data Analyst,Client of Superbotics(France,paris)
+                            </h2>
+                        </div>
+                        <div class="quote-container">
+                            <p class="quote">
+                              Hariprasath's development of the LLM chat bot using a vector database is truly commendable. His innovative approach to leveraging vector databases has resulted in a chat bot that not only meets but exceeds expectations, showcasing his expertise and commitment to excellence in the field. This achievement underscores Hariprasath's ability to implement cutting-edge technologies effectively, marking a significant contribution to the success of the project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img class="avatar" src="https://media.licdn.com/dms/image/D5603AQGsc9ms-L5ejg/profile-displayphoto-shrink_100_100/0/1691549486835?e=1707350400&v=beta&t=2yzkQhzhd_0G1gdIpD4Y8KTlpam8YLK2NL2YLNVYn98" />
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Rahul</h1>
+                            <h2 class="title">Training Coordinator, SightSpectrum</h2>
+                        </div>
+                        <div class="quote-container">
+                            <p class="quote">
+                                As a Training Coordinator, I can attest that Hariprasath is an outstanding Python developer, showcasing exceptional skills and expertise in crafting efficient and robust solutions. His dedication, attention to detail, and innovative approach to coding have consistently contributed to the success of our projects. Hariprasath's excellence in Python development not only meets but exceeds expectations, making him a valuable asset to our team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img class="avatar" src="https://media.licdn.com/dms/image/D5603AQFKF-jLfo742A/profile-displayphoto-shrink_100_100/0/1692788118341?e=1707350400&v=beta&t=usPqoOBgqt9-Her769YMgfS5ZnS_-TqjrgI-76iCg-A" />
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                          <path
+                            d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                          />
+                        </svg>
+                        <div class="header">
+                            <h1 class="name">Kirubakaran k</h1>
+                            <h2 class="title">Team Member, SightSpectrum/h2>
+                        </div>
+                        <div class="quote-container">
+                            <p class="quote">
+                              Hariprasath not only excels as a Python developer and innovator but also proves to be a valuable team member. His collaborative spirit, effective communication, and willingness to contribute to the team's success make him an essential asset. Hariprasath's dedication to both individual excellence and team synergy enhances the overall dynamics and productivity of our collaborative efforts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination" style="color: var(--main-color);"></div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <!-------  End of Testimonial Section    ------------->
+
+    <!-- Contact Section design -->
+    <section class="contact" id="contact">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-stretch">
+          <h2 id="section-title" class="text-center pt-3" data-aos="fade-down">Contact <span>Me!</span></h2>
+          <div class="col-md-5 d-flex align-items-center ">
+            <div class="info bg-white shadow">
+              <div class="address" data-aos="fade-right" data-aos-delay="1000">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>MEPZ Tmabaram Sanatorium, Chennai - 600012</p>
+              </div>
+
+              <div class="email" data-aos="fade-right" data-aos-delay="500">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>harijordan95@gmail.com</p>
+              </div data-aos="fade-right" data-aos-delay="1500">
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4436249790156!2d80.11685947343815!3d12.943440265498365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f9f6dfdb219%3A0x5fe43969d0fc4b5c!2sMEPZ%20ZONE%2C%20West%20Tambaram%2C%20Tambaram%2C%20Chennai%2C%20Tamil%20Nadu%20600047!5e0!3m2!1sen!2sin!4v1698224202089!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 240px;" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-7 position-relative">
+            <div class="d-flex justify-content-center position-absolute top-50 start-50 visually-hidden" id="spinner">
+              <div class="spinner-grow" style="color:#754ef9" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <form action="contact_mail" method="post" class="bg-white shadow px-lg-2 px-3 pb-2" id="contactForm">
+                {% csrf_token %}
+                <div class="input-box" data-aos="fade-left" data-aos-delay="500">
+                    <input type="text" id="full_name" name="full_name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address(optional)">
+                </div>
+                <div class="input-box" data-aos="fade-left" data-aos-delay="1000">
+                    <input type="text" id="mobile_number" name="mobile_number" placeholder="Mobile Number(optional)" required>
+                    <input type="text" id="email_subject" name="email_subject" placeholder="Email Subject" required>
+                </div>
+                <textarea id="message" name="message" cols="30" rows="7" placeholder="Your Message" data-aos="fade-left" data-aos-delay="1500"></textarea>
+        
+                <input type="submit" value="Send Message" class="btn" data-bs-toggle="modal" data-bs-target="successModal">
+            </form>
+          </div>
+        
+        <!-- ... your existing modal structure ... -->
+        
+          <!-- Modal -->
+          <div class="modal fade" id="successModal" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content position-relative">
+                <div class="modal-img position-absolute top-0 start-50 translate-middle text-center align-middle p-2" style="font-size: 11rem;background-color: var(--main-color);color: white; border-radius: 20px; width: 60%; height: 43%;">
+                  <i class='bx bx-check-circle position-absolute' style="left: 22%; top: -5%;"></i>
+                </div>
+                <div class="text-center mt-4">
+                  <h5 class="modal-title fs-1 fw-bolder mt-5" style="color:var(--main-color);" id="staticBackdropLabel">Success</h5>
+                  
+                </div>
+                <div class="modal-body text-center">
+                  <h3 style="font-family: 'Times New Roman', Times, serif; font-weight: 600;">Hi <span style="color: #754ef9;
+                    text-transform: capitalize;" id="fullName">hari</span> Message sent</h3>
+                  <hr style="width: 100%; height: 2px; background-color: var(--main-color);">
+                  <p class="text-muted">I'll get up with you in a short period of time in the mean time you could use the below link for my work...</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary"><a href="" style="color: white; text-decoration: none;">Project Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/typed.js/typed.umd.js' %}"></script>
+    <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- for External javascript files -->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+  </body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var contactForm = document.getElementById('contactForm');
+      var successModal = document.getElementById('successModal');
+      var spinner = document.getElementById('spinner');
+      var fullNameSpan = document.getElementById('fullName');
+      contactForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          // Create a new FormData object
+          var formData = new FormData(contactForm);
+          let csrftoken = getCookie('csrftoken');
+          // Show the spinner
+          spinner.classList.remove("visually-hidden")
+        
+          fetch(this.action, {
+              method: 'POST',
+              body: JSON.stringify(Object.fromEntries(formData)), // Convert FormData to JSON
+              headers: {
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrftoken
+              },
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.success) {
+                fullNameSpan.textContent = formData.get('full_name'); // Set full name in the modal
+                successModal.classList.add('show');
+                successModal.style.display = 'block';
+                document.body.classList.add('modal-open');
+                spinner.classList.add("visually-hidden")
+              } else {
+                  console.error(data.error);
+              }
+          })
+          .catch(error => {
+              console.error('Fetch error:', error);
+          });
+          function getCookie(name) {
+          let cookieValue = null;
+          if (document.cookie && document.cookie !== '') {
+              let cookies = document.cookie.split(';');
+              for (let i = 0; i < cookies.length; i++) {
+                  let cookie = cookies[i].trim();
+                  if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                      cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                      break;
+                  }
+              }
+          }
+          return cookieValue;
+      }
+      });
+
+      // Close the successModal when the "Close" button is clicked
+      successModal.querySelector('.btn-secondary').addEventListener('click', function () {
+          hideModal();
+      });
+
+      // Close the successModal when clicking anywhere outside it
+      successModal.addEventListener('click', function (event) {
+          if (event.target === successModal) {
+              hideModal();
+          }
+      });
+
+      function hideModal() {
+          successModal.classList.remove('show');
+          successModal.style.display = 'none';
+          document.body.classList.remove('modal-open');
+      }
+  });
+
+</script>

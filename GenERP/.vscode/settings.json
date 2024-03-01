@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "bhcpec3oksrp3hf6fftd-postgresql.services.clever-cloud.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "bhcpec3oksrp3hf6fftd-postgresql.services.clever-cloud.com",
+            "database": "bhcpec3oksrp3hf6fftd",
+            "username": "uautqps1njbug4fqhgwz"
+        }
+    ],
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.port": 5501
+}
